@@ -1,14 +1,25 @@
-CC = g++ -Wall
-#CC = g++ -ansi -Wall -pedantic
-#CFLAGS = -g -Wall -O3 -ffast-math -DHAVE_INLINE -DGSL_RANGE_CHECK_OFF
+# Might fail to compile with -Wall
+# CC = g++ -Wall
+
+CC = g++
+
+# CC = g++ -ansi -Wall -pedantic
+# CFLAGS = -g -Wall -O3 -ffast-math -DHAVE_INLINE -DGSL_RANGE_CHECK_OFF
 # CFLAGS = -g -Wall
+
 LDFLAGS = -lgsl -lm -lgslcblas
 
-GSL_INCLUDE = /home/chongw/include
-GSL_LIB = /home/chongw/lib
+# these paths are not going to work for general audience
+# although somehow the app compiles just fine with them
+# still...
+# GSL_INCLUDE = /home/chongw/include
+# GSL_LIB = /home/chongw/lib
 
 GSL_INCLUDE_MAC = /usr/local/include/
 GSL_LIB_MAC = /usr/local/lib/
+
+GSL_INCLUDE = GSL_INCLUDE_MAC
+GSL_LIB = GSL_LIB_MAC
 
 LSOURCE = main.cpp utils.cpp corpus.cpp ctr.cpp data.cpp opt.cpp
 LHEADER = utils.h corpus.h ctr.h data.h opt.h

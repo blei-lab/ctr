@@ -4,6 +4,7 @@
 #define CORPUS_H
 
 #include <vector>
+#include <stddef.h>
 
 using namespace std;
 
