@@ -1,6 +1,6 @@
 # ctr
 
-Collaborative modeling for recommendation. Implements variational inference for a collaborative topic models. These models recommend items to users based on item content and other users' ratings. Written by [Chong Wang](http://www.cs.princeton.edu/~chongw/index.html).
+Collaborative modeling for recommendation. Implements variational inference for a collaborative topic models. These models recommend items to users based on item content and other users' ratings. Written by [Chong Wang](http://www.cs.princeton.edu/~chongw/index.html). Fun fact: this is in use at the New York Times ([blog post](http://open.blogs.nytimes.com/2015/08/11/building-the-next-new-york-times-recommendation-engine/))!
 
 ## Demo
 
